@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20220140042_PDW7</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Menambahkan warna putih pada teks */
+    .text-white {
+      color: white !important;
+    }
+    /* Menambahkan warna orange pada teks */
+    .text-orange {
+      color: orange !important;
+    }
+    /* Menambahkan warna orange pada tombol */
+    .btn-orange {
+      background-color: orange;
+      border-color: white;
+      color: white; /* Warna teks menjadi putih */
+      position: relative; /* Menjadikan posisi relatif */
+      z-index: 1; /* Mengatur z-index agar tetap muncul di atas */
+    }
+    /* Menambahkan warna oranye pada teks tombol saat dihover */
+    /* Menambahkan warna orange pada tombol saat dihover */
+    .btn-orange:hover {
+      background-color: orange; /* Mengubah warna latar belakang menjadi orange saat dihover */
+      border-color: orange; /* Mengubah warna border menjadi orange saat dihover */
+      color: white; /* Mengubah warna teks menjadi putih saat dihover */
+    }
+
+    /* Membuat gambar menjadi bulat sempurna */
+    .rounded-circle {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
+      height: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
+    }
+  </style>
+</head>
+<body class="bg-dark"> <!-- Menghapus class "text-white" -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand text-orange" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#" style="margin-left: 60px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" style="margin-right: 20px; margin-left: 20px;">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" style="margin-right: 20px;">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-orange" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+  </nav>
+<section class="home py-5">
+  <div class="container-lg">
+    <div class="row min-vh-100 align-items-center align-content-center">
+      <div class="col-md-6 mt-5 mt-md-0">
+        <div class="home-img text-center">
+          <img src="img/WhatsApp Image 2024-04-28 at 12.37.49_b215a111.jpg" class="rounded-circle mw-100" alt="profile img">
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+        <div class="home-text">
+          <p class="text-muted mb-1 text-white">Halo Perkenalkan Saya</p>
+          <h1 class="text-orange text-uppercase fs-1 fw-bold">Abrar Imam Satria</h1>
+          <h2 class="text-orange fs-4">Teknologi Informasi</h2>
+          <p class="mt-4 text-white">Saya saat ini masih kuliah di universitas muhammadiyah yogyakarta jurusan teknologi informasi,
+            web ini dibuat untuk praktikum pengembangan desain web menggunakan bootstrap 5</p>
+          <a id="my-project" href="#portfolio" class="btn btn-orange px-3 mt-3">My Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Your JavaScript goes here -->
+
+</body>
+</html>
